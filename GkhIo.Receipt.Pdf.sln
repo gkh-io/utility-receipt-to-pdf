@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GkhIo.Receipt.Pdf", "GkhIo.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFiles", "SolutionFiles", "{527FC690-27C3-4F35-863D-3B7AD7DA3B3A}"
 	ProjectSection(SolutionItems) = preProject
-		readme.md = readme.md
 		.gitignore = .gitignore
+		readme.md = readme.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gkhio.Receipt.Pdf.Tests", "Gkhio.Receipt.Pdf.Tests\Gkhio.Receipt.Pdf.Tests.csproj", "{69183B83-3894-44A8-9A92-59A50A47A0C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{15078B15-E23B-4E8B-B8A0-CC2F721559B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15078B15-E23B-4E8B-B8A0-CC2F721559B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15078B15-E23B-4E8B-B8A0-CC2F721559B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69183B83-3894-44A8-9A92-59A50A47A0C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69183B83-3894-44A8-9A92-59A50A47A0C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69183B83-3894-44A8-9A92-59A50A47A0C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69183B83-3894-44A8-9A92-59A50A47A0C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
