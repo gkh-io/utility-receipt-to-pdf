@@ -23,4 +23,16 @@
     <ProjectReference Include="..\GkhIo.Receipt.Pdf\GkhIo.Receipt.Pdf.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="ModuleTests\ReceiptPdfPritnerTests.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Samples\sample.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

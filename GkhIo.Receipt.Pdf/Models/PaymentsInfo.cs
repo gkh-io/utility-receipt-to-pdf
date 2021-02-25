@@ -29,20 +29,5 @@
         /// Итого к оплате
         /// </summary>
         public decimal TotalPayment { get; set; }
-
-        /// <summary>
-        /// Учтены все платежи до указанной даты
-        /// </summary>
-        public NodaTime.LocalDate PaymentsIncludedUpToDate { get; set; }
-
-        /// <summary>
-        /// Текст, расположенный справа от штрихкодов
-        /// </summary>
-        public string[] RightText { get; set; }
-
-        /// <summary>
-        /// Текст, расположенный внизу первой страницы
-        /// </summary>
-        public string[] BottomText { get; set; }
     }
 }

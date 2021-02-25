@@ -16,6 +16,7 @@ namespace GkhIo.Receipt.Pdf.Services
         {
             if(person == null)
                 throw new ArgumentNullException(nameof(person));
+            _builder.Clear();
 
             AppendPart(person.LastName);
             AppendPart(person.FirstName);

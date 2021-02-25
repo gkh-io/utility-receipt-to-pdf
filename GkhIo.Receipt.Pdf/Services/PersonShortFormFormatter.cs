@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using System.Security;
 using System.Text;
 using GkhIo.Receipt.Pdf.Abstract;
 using GkhIo.Receipt.Pdf.Models;

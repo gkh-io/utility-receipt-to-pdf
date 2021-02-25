@@ -3,7 +3,7 @@
     /// <summary>
     /// Получатель платежа
     /// </summary>
-    public sealed class PaymentReciever
+    public sealed class PaymentReceiver
     {
         /// <summary>
         /// Полное название компании получателя платежа,
@@ -30,7 +30,7 @@
         /// <summary>
         /// БИК банка получателя платежа
         /// </summary>
-        public string BIC { get; set; }
+        public string Bic { get; set; }
 
         /// <summary>
         /// ИНН получателя платежа
@@ -40,7 +40,7 @@
         /// <summary>
         /// КПП получателя платежа
         /// </summary>
-        public string KPP { get; set; }
+        public string Kpp { get; set; }
 
 
     }

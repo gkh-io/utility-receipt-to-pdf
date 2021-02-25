@@ -18,13 +18,16 @@
         /// <summary>
         /// Данные по счётчикам
         /// </summary>
-        public Counter[] Counters { get; set; }
+        public Meter[] Meters { get; set; }
 
         /// <summary>
         /// ФИО плательщика
         /// </summary>
         public Person Payer { get; set; }
-        
+        /// <summary>
+        /// Организация получатель платежа
+        /// </summary>
+        public PaymentReceiver PaymentReceiver { get; set; }
         /// <summary>
         /// Номер счёта квитанции
         /// </summary>
@@ -38,8 +41,11 @@
         /// <summary>
         /// Оплатить до
         /// </summary>
-        public NodaTime.LocalDate PayUntil { get; set; }
-
+        public NodaTime.LocalDate PayUpTo { get; set; }
+        /// <summary>
+        /// День до которого были учтены платежи за предыдущий расчётный период
+        /// </summary>
+        public int PaidDay { get; set; }
         /// <summary>
         /// Информация об объекте оплаты (квартире и доме)
         /// </summary>
@@ -59,8 +65,33 @@
         /// </summary>
         public string QR { get; set; }
         /// <summary>
-        /// Дополнительные баркоды квитанции
+        /// Штрихкод месячного начисления
         /// </summary>
-        public string[] Barcodes { get; set; }
+        public string BarcodeForMonth { get; set; }
+        /// <summary>
+        /// Штрихкод суммарного начисления
+        /// </summary>
+        public string BarcodeForTotal { get; set; }
+        /// <summary>
+        /// Сумма к оплате
+        /// </summary>
+        public decimal Sum { get; set; }
+        /// <summary>
+        /// Дополнительная информация по платежу через QR
+        /// </summary>
+        public string QRAdditionalInfo { get; set; }
+        /// <summary>
+        /// Предыдущие расчёты, учтённые в квитанции
+        /// </summary>
+        public PaymentsInfo Payments { get; set; }
+        /// <summary>
+        /// Текст, расположенный справа от штрихкодов
+        /// </summary>
+        public string[] RightNotes { get; set; }
+
+        /// <summary>
+        /// Текст, расположенный внизу первой страницы
+        /// </summary>
+        public string[] BottomNotes { get; set; }
     }
 }
