@@ -1,11 +1,9 @@
-﻿using System;
-
-namespace GkhIo.Receipt.Pdf.Models
+﻿namespace GkhIo.Receipt.Pdf.Models
 {
     /// <summary>
     /// Данные счётчика
     /// </summary>
-    public sealed class Counter
+    public sealed class Meter
     {
         /// <summary>
         /// Тип счётчика
@@ -18,9 +16,9 @@ namespace GkhIo.Receipt.Pdf.Models
         /// <summary>
         /// Предыдущие показания счётчика
         /// </summary>
-        public decimal Value { get; set; }
+        public decimal PreviousValue { get; set; }
         /// <summary>
-        /// Дата до которой необходимо провести селдующую поверку
+        /// Дата до которой необходимо провести следующую поверку
         /// </summary>
         public NodaTime.LocalDate Date { get; set; }
     }

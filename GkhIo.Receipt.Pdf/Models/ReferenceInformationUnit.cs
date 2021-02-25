@@ -18,7 +18,7 @@
         /// </summary>
         public string MeterNumber { get; set; }
         /// <summary>
-        /// Предыдушее показание
+        /// Предыдущее показание
         /// </summary>
         public decimal PreviousValue { get; set; }
         /// <summary>

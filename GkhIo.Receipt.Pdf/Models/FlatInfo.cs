@@ -27,10 +27,9 @@
         public decimal HeatedArea { get; set; }
 
         /// <summary>
-        /// Зарегистрировано / проживает
+        /// Зарегистрировано
         /// </summary>
         public int PersonsRegistered { get; set; }
-
         /// <summary>
         /// Общая площадь дома
         /// </summary>

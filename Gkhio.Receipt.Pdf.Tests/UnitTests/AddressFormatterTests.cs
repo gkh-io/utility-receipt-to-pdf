@@ -3,7 +3,7 @@ using GkhIo.Receipt.Pdf.Models;
 using GkhIo.Receipt.Pdf.Services;
 using Xunit;
 
-namespace Gkhio.Receipt.Pdf.Tests
+namespace Gkhio.Receipt.Pdf.Tests.UnitTests
 {
     /// <summary>
     /// Тестирование форматирования адреса для квитанции
